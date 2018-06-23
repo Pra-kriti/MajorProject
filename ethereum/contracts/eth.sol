@@ -19,10 +19,10 @@ contract User{
     Record[] records;
     
    
-    function addUser(uint x) public {
-        if (x==1){
-            isPatient[msg.sender]=true;
-        }
+    function addPatient() public {
+        
+        isPatient[msg.sender]=true;
+       
     }
     function addRecord(uint recid, string ipfs)public{
        Record memory newRecord=Record({
